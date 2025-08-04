@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            /* transition: 2s; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: moveBox;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            
+
+        }
+        /* .box:hover{
+            margin-top: 350px;
+            cursor: pointer;
+        }  */
+
+        @keyframes moveBox {
+            0%{
+                margin:0;
+                background-color:brown;
+                
+            } 25% {
+
+                margin-left:  150px ;
+                margin-top:0;
+                background-color:brown;
+            }50% {
+                margin-top:  150px;
+                background-color: aquamarine;
+            }75%{
+                margin-top: auto; 
+                margin: 0;
+                background-color: brown;
+            }100%{
+                
+            
+
+            }
+             
+            
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="box"></div> 
+</body>
+</html>
